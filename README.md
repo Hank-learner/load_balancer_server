@@ -1,6 +1,6 @@
-# task 2
+# load balancer in php
 
-# requests to the server, building a load balancer in php
+# requests to the server, building a load balancer
 
 server has a cluster with 4 nodes. Each of these has different Memory sizes(RAM), Number of CPUs. Represent each node as a website, hosted using Apache on 4 different ports.
 
