@@ -1,0 +1,87 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>cern load balance</title>
+	
+	<style>
+		body{
+			background-color: #1c1c1c;
+			align-content: center;
+			justify-content: center;
+			align-items: center;
+			color: aliceblue;
+		}
+		header{
+			margin: auto;
+			border-style: outset;
+			width: 300px;
+			border-color: aquamarine;
+			padding: 20px;
+			text-align: center;
+		}
+		input{
+	        padding: 15px;
+			padding-bottom: 10px;
+			padding-top: 10px;
+			border-radius: 5px;
+			margin: auto;
+		}
+		input[type='number']{
+			padding: 5px;
+			padding-left: 10px;
+			border-radius: 10px;
+			border-color: #2500c3;
+		}
+		form{
+			display: block;
+			text-align: center;
+			margin: auto;
+			width: 600px;
+			height:auto;
+			padding: 40px;
+			border-radius: 10px;
+			background-color: #2a2a2a;
+			
+		}
+	</style>
+</head>
+<body>
+	<header>
+	Request form
+	</header>
+	<br>
+	<br>
+	<form action="loadbalancer.php" method="post">
+
+		<label>enter your id no :</label>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<input type="number" min="0" name="id" placeholder="enter your rollno" required="true">
+<br>
+		<br>
+				<label>CPU required :</label>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<input type="number" min="0" name="cpu" placeholder="enter your rollno" required="true">
+
+<br>
+		<br>
+				<label>Memory required MB:</label>
+				&nbsp;
+	<input type="number" min="0" step="0.01" name="memory" placeholder="enter memory" required="true">
+<br>
+	
+		<br>
+				<label>Time required seconds :</label>
+				&nbsp;
+	<input type="number" min="0" name="time" placeholder="enter time" required="true">
+<br>
+	
+		<br>
+		<br>
+		<input type="submit">
+		<div id="disp"></div>
+	</form>
+	
+	<script>
+	</script>
+</body>
+</html>
